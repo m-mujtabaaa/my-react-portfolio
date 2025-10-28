@@ -1,0 +1,26 @@
+import { useState } from 'react'
+import './App.css'
+import { Typed } from 'react-typed'
+import Navbar from './components/Navbar'
+import Front from './components/front'
+import About from './components/About'
+import Project from './components/project'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <Navbar/>
+      <Front/>
+      <About/>
+      <Project/>
+      <Contact/>
+      <Footer/>
+    </>
+  )
+}
+
+export default App

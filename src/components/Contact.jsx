@@ -3,7 +3,7 @@ import React from 'react'
 function Contact() {
   return (
      <>
-    <div className='h-[100vh] w-full bg-[#01060cff] flex justify-center items-center' id='Contact'>
+    <div className='h-[85vh] w-full bg-[#01060cff] flex justify-center items-center' id='Contact'>
         <div className='h-[30vh]'>
           <h2 className='text-white font-black text-[48px] text-center mb-[5vh]'>Keep In Touch</h2>
           <p className='text-[#b8b8b8ff] text-[17px] text-center'>I'm currently specializing in <span className='text-[#4E9FE5] '>Front-end Development</span>.</p>

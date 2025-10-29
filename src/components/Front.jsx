@@ -15,7 +15,7 @@ function Front() {
         <h5 className='text-[#4E9FE5] font-semibold text-[33px] h-[20px]'>Assalam O Alaikum, I'm-</h5>
         <h3 className='text-white text-[85px] font-black '>Muhammad Mujtaba</h3>
         <ReactTyped strings={["Full Stack Web Developer","Full Stack Web Developer",]} typespeed={10} backspeed={10} loop className='text-white font-medium text-[33px]'/> 
-        <p className='text-[#b8b8b8ff] text-[19px] font-medium w-[50vw] mt-5 mb-8'>I am an aspiring web developer with a strong foundation in HTML, CSS, Tailwind, JavaScript and React.js. Currently completing a Diploma in Information Technology (2024–2025).</p>
+        <p className='text-[#b8b8b8ff] text-[19px] font-medium w-[50vw] mt-5 mb-8'>I am an aspiring web developer with a strong foundation in HTML, CSS, Tailwind, JavaScript and React.js. Recently completed a Diploma in Information Technology (2024–2025).</p>
         <button className='h-[40px] w-[125px] bg-[#0f1b2cff] hover:bg-[#1e3049ff] rounded-md text-white font-medium text-[17px] duration-300 ease-in-out'>Resume</button>
         <button className='h-[40px] w-[125px] bg-[#0f1b2cff] hover:bg-[#1e3049ff] rounded-md text-white font-medium text-[17px] duration-300 ease-in-out ml-4'>LinkedIn</button>
         </div> 

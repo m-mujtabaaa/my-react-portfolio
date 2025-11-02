@@ -3,7 +3,7 @@ import React from 'react'
 function Project() {
   return (
     <>
-        <div className='w-[90%] mx-auto pt-[15vh] px-[20px]'  id='Project'>
+        <div className='w-[88%] mx-auto pt-[15vh] px-[20px]'  id='Project'>
           <h2 className='text-white font-bold text-[40px] '>Project</h2>
           <p className='text-[#b8b8b8ff] w-[40vw] pt-3 font-medium'>Here's some of my projects that I have worked on.</p>
           <div className='py-[5vh]'>

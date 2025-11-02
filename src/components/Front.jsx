@@ -5,8 +5,8 @@ import { ReactTyped } from 'react-typed'
 function Front() {
   return (
     <>
-      <div className='mx-auto flex w-[90%] pt-[25vh]'>
-      <div className='flex flex-col items-center px-4'>
+      <div className='mx-auto flex w-[88%] pt-[25vh]'>
+      <div className='flex flex-col items-center pr-4'>
         <div className='h-[200px] w-[2px] bg-linear-to-b from-[#020913ff] to-[#4E9FE5]'> </div>
         <div className='h-[15px] w-[15px] bg-[#4E9FE5] rounded-xl'></div>
         <div className='h-[200px] w-[2px] bg-linear-to-t from-[#020913ff] to-[#4E9FE5]'> </div>

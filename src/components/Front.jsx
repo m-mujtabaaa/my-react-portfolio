@@ -6,7 +6,7 @@ function Front() {
   return (
     <>
       <div className='mx-auto flex w-[100%] md:w-[88%] pt-[20vh] md:pt-[25vh] px-[7px]'>
-      <div className='flex-col flex items-center px-1 md:pr-2'>
+      <div className='flex-col flex items-center pr-2 md:pr-2'>
         <div className='h-[200px] w-[2px] bg-linear-to-b from-[#020913ff] to-[#4E9FE5]'> </div>
         <div className='h-[15px] w-[15px] bg-[#4E9FE5] rounded-xl'></div>
         <div className='h-[200px] w-[2px] bg-linear-to-t from-[#020913ff] to-[#4E9FE5]'> </div>

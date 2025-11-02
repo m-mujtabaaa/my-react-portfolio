@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import './index.css';
 import { Typed } from 'react-typed'
 import Navbar from './components/Navbar'
 import Front from './components/Front'

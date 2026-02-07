@@ -10,9 +10,9 @@ function Contact() {
           <p className='text-[#b8b8b8ff] text-[17px] text-center'>I'm currently specializing in <span className='text-[#4E9FE5] '>Front-end Development</span>.</p>
             <p className='text-[#b8b8b8ff] text-[17px] text-center mb-[7vh]'>Feel free to get in touch and talk more about your projects.</p>
             <div className='w-full flex flex-row justify-center items-center'>
-            <button onClick={() => window.open("https://.com", "_blank")}  className='h-[30px] md:h-[40px] w-[105px] md:w-[125px] bg-[#0f1b2cff] hover:bg-[#1e3049ff] rounded-md text-white font-medium text-[14px] md:text-[17px] duration-300 ease-in-out ml-0'>Resume</button>
-            <button onClick={() => window.open("https://github.com", "_blank")}  className='h-[30px] md:h-[40px] w-[105px] md:w-[125px] bg-[#0f1b2cff] hover:bg-[#1e3049ff] rounded-md text-white font-medium text-[14px] md:text-[17px] duration-300 ease-in-out ml-[1vw]'>Email</button>
-            <button onClick={() => window.open("https://github.com", "_blank")}  className='h-[30px] md:h-[40px] w-[105px] md:w-[125px] bg-[#0f1b2cff] hover:bg-[#1e3049ff] rounded-md text-white font-medium text-[14px] md:text-[17px] duration-300 ease-in-out ml-[1vw]'>WhatsApp</button>
+            <button onClick={() => window.open("https://www.linkedin.com/in/muhammad-mujtababa-47b763327", "_blank")}  className='h-[30px] md:h-[40px] w-[105px] md:w-[125px] bg-[#0f1b2cff] hover:bg-[#1e3049ff] rounded-md text-white font-medium text-[14px] md:text-[17px] duration-300 ease-in-out ml-0'>Resume</button>
+            <button onClick={() => window.open("mailto:mmkww2007@gmail.com", "_blank")}  className='h-[30px] md:h-[40px] w-[105px] md:w-[125px] bg-[#0f1b2cff] hover:bg-[#1e3049ff] rounded-md text-white font-medium text-[14px] md:text-[17px] duration-300 ease-in-out ml-[1vw]'>Email</button>
+            <button onClick={() => window.open("https://wa.me/923452936459", "_blank")}  className='h-[30px] md:h-[40px] w-[105px] md:w-[125px] bg-[#0f1b2cff] hover:bg-[#1e3049ff] rounded-md text-white font-medium text-[14px] md:text-[17px] duration-300 ease-in-out ml-[1vw]'>WhatsApp</button>
         </div>
         </div>
     </div>

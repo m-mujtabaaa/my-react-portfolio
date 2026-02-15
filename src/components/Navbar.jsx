@@ -8,7 +8,7 @@ function Navbar() {
       <div className='w-[100vw] fixed'>
         <div className='w-[90%] mx-auto h-[77px] bg-[#01060cff] flex border-b-[1px] border-[#272727ff] items-center justify-between'>
           
-          <h2 className='py-5 px-10 text-[#868686ff] text-[24px] grow font-black'>
+          <h2 className='py-5 px-5 text-[#868686ff] text-[24px] grow font-black'>
             &lt;/<span className='text-[#ffffffff]'>Mujtaba</span>&gt;
           </h2>
 

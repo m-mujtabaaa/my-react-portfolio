@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <>
-      <div className='w-[100vw] fixed'>
+     <div className="w-[100vw] fixed top-0 left-0 z-50" data-aos="fade-down">
         <div className='w-[90%] mx-auto h-[77px] bg-[#01060cff] flex border-b-[1px] border-[#272727ff] items-center justify-between'>
           
           <h2 className='py-5 px-5 text-[#868686ff] text-[24px] grow font-black'>

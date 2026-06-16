@@ -1,0 +1,21 @@
+@keyframes appear{
+    0%{
+        opacity:0;
+        margin-top: 16px;
+    }
+    100%{
+        opacity:100%;
+        margin-top: 0px;
+    }
+}
+
+@keyframes navappear{
+    0%{
+        opacity:0;
+        margin-top: -100%;
+    }
+    100%{
+        opacity:100%;
+        margin-top: 0px;
+    }
+}

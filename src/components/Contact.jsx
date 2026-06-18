@@ -4,14 +4,7 @@ import { useEffect, useState } from "react";
 import { ReactTyped } from 'react-typed'
 
 function Contact() {
-  useEffect(() => {
-          AOS.init({
-            duration: 1000,
-            once: true,
-          });
-        }, []);
-    
-  
+
   return (
      <>
     <div className='h-[85vh] w-[88%] bg-[#01060cff] mx-auto flex justify-center items-center' id='Contact' data-aos="fade-up">

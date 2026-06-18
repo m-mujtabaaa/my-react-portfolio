@@ -5,18 +5,13 @@ import { useEffect, useState } from "react";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
+
 
   return (
     <>
-     <div className="w-[100vw] fixed top-0 left-0 z-50" data-aos="fade-down">
-        <div className='w-[90%] mx-auto h-[77px] bg-[#01060cff] flex border-b-[1px] border-[#272727ff] items-center justify-between'>
-          
+      <div className="w-[100vw] fixed top-0 left-0 z-45 " data-aos="fade-down">
+        <div className='w-[90%] mx-auto h-[77px] bg-[#01060cff] z-6 flex border-b-[1px] border-[#272727ff] items-center justify-between'>
+
           <h2 className='py-5 px-5 text-[#868686ff] text-[24px] grow font-black'>
             &lt;/<span className='text-[#ffffffff]'>Mujtaba</span>&gt;
           </h2>
@@ -29,7 +24,7 @@ function Navbar() {
           </ul>
 
           {/* Mobile Hamburger */}
-          <div className='md:hidden px-5'>
+          <div className='md:hidden px-5 z-4'>
             <button onClick={() => setIsOpen(!isOpen)} className="text-[#b8b8b8ff] focus:outline-none">
               {isOpen ? (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -47,14 +42,18 @@ function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-[#01060cff] w-full border-t border-[#272727ff]">
-            <ul className="flex flex-col items-center py-4 text-[#b8b8b8ff] font-semibold space-y-3 text-[15px]">
-              <li className='duration-300 hover:text-white'><a href="#">Home</a></li>
-              <li className='duration-300 hover:text-white'><a href="#Project">Projects</a></li>
-              <li className='duration-300 hover:text-white'><a href="#Contact">Contact</a></li>
+          <div className="fixed top-[77px] right-0 w-64 h-screen bg-[#01060cff] animate-[appear_0.3s_ease-out_forwards]">
+            <ul className="flex flex-col p-6 gap-4 text-[#b8b8b8ff]">
+              <li className='text-bold
+              '><a href="#">Home</a></li> 
+              <li className='text-bold
+              '><a href="#Project">Projects</a></li> 
+              <li className='text-bold
+              '><a href="#Contact">Contact</a></li>
             </ul>
           </div>
         )}
+
 
       </div>
     </>

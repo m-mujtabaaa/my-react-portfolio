@@ -4,13 +4,6 @@ import { useEffect, useState } from "react";
 import { ReactTyped } from 'react-typed'
 
 function About() {
-  
-    useEffect(() => {
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    }, []);
 
   return (
     <>

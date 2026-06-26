@@ -15,7 +15,7 @@ function Front() {
 
   return (
     <>
-      <div className='mx-auto flex w-[88%] h-[100vh] pt-[20vh] md:pt-[25vh] ' data-aos="fade-up">
+      <div className='mx-auto flex w-[88%] h-[100vh] pt-[20vh] md:pt-[25vh] ' id="home" data-aos="fade-up">
         <div className='flex-col flex items-center pr-2 md:pr-2'
            >
           <div className='h-[200px] w-[2px] bg-linear-to-b from-[#020913ff] to-[#4E9FE5]'> </div>

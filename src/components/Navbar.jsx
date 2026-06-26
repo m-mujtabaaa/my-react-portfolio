@@ -4,8 +4,28 @@ import { useEffect, useState } from "react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
 
+  useEffect(() => {
+const sections = document.querySelectorAll("[id]");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
@@ -18,9 +38,41 @@ function Navbar() {
 
           {/* Desktop Menu */}
           <ul className='hidden md:flex text-[#b8b8b8ff] font-semibold py-7 px-10 text-[15px]'>
-            <li className='mx-5 duration-300 hover:text-white'><a href="#">Home</a></li>
-            <li className='mx-5 duration-300 hover:text-white'><a href="#Project">Projects</a></li>
-            <li className='mx-5 duration-300 hover:text-white'><a href="#Contact">Contact</a></li>
+            <li className="mx-5">
+              <a
+                href="#home"
+                className={`duration-300 ${activeSection === "home"
+                    ? "text-white"
+                    : "text-[#b8b8b8ff] hover:text-white"
+                  }`}
+              >
+                Home
+              </a>
+            </li>
+
+            <li className="mx-5">
+              <a
+                href="#Project"
+                className={`duration-300 ${activeSection === "Project"
+                    ? "text-white"
+                    : "text-[#b8b8b8ff] hover:text-white"
+                  }`}
+              >
+                Projects
+              </a>
+            </li>
+
+            <li className="mx-5">
+              <a
+                href="#Contact"
+                className={`duration-300 ${activeSection === "Contact"
+                    ? "text-white"
+                    : "text-[#b8b8b8ff] hover:text-white"
+                  }`}
+              >
+                Contact
+              </a>
+            </li>
           </ul>
 
           {/* Mobile Hamburger */}
@@ -42,15 +94,44 @@ function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="fixed top-[77px] right-0 w-64 h-screen bg-[#01060cff] animate-[appear_0.3s_ease-out_forwards]">
-            <ul className="flex flex-col p-6 gap-4 text-[#b8b8b8ff]">
-              <li className='text-bold
-              '><a href="#">Home</a></li> 
-              <li className='text-bold
-              '><a href="#Project">Projects</a></li> 
-              <li className='text-bold
-              '><a href="#Contact">Contact</a></li>
-            </ul>
+          <div className="md:hidden bg-[#01060cff] w-full border-t border-[#272727ff]">            
+          <ul className="flex flex-col p-6 gap-4 text-[#b8b8b8ff]">
+             <li className="mx-5">
+              <a
+                href="#home"
+                className={`duration-300 ${activeSection === "home"
+                    ? "text-white"
+                    : "text-[#b8b8b8ff] hover:text-white"
+                  }`}
+              >
+                Home
+              </a>
+            </li>
+
+            <li className="mx-5">
+              <a
+                href="#Project"
+                className={`duration-300 ${activeSection === "Project"
+                    ? "text-white"
+                    : "text-[#b8b8b8ff] hover:text-white"
+                  }`}
+              >
+                Projects
+              </a>
+            </li>
+
+            <li className="mx-5">
+              <a
+                href="#Contact"
+                className={`duration-300 ${activeSection === "Contact"
+                    ? "text-white"
+                    : "text-[#b8b8b8ff] hover:text-white"
+                  }`}
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
           </div>
         )}
 

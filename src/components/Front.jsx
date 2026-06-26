@@ -15,7 +15,7 @@ function Front() {
 
   return (
     <>
-    <div className=" bg-[url('pattern.svg')] bg-cover">
+    <div className=" bg-[url('/pattern.svg')] bg-cover">
       <div className='mx-auto flex w-[88%] h-[100vh] pt-[20vh] md:pt-[25vh] ' id="home" data-aos="fade-up">
         <div className='flex-col flex items-center pr-2 md:pr-2'
            >

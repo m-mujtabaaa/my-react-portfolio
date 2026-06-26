@@ -15,6 +15,7 @@ function Front() {
 
   return (
     <>
+    <div className=" bg-[url('pattern.svg')] bg-cover">
       <div className='mx-auto flex w-[88%] h-[100vh] pt-[20vh] md:pt-[25vh] ' id="home" data-aos="fade-up">
         <div className='flex-col flex items-center pr-2 md:pr-2'
            >
@@ -45,6 +46,7 @@ function Front() {
           <button onClick={() => window.open("https://www.linkedin.com/in/muhammad-mujtababa-47b763327", "_blank")} className='h-[30px] md:h-[40px] w-[110px] md:w-[125px] bg-[#0f1b2cff] hover:bg-[#1e3049ff] rounded-md text-white font-medium text-[14px] md:text-[17px] duration-300 ease-in-out ml-4'
              >LinkedIn</button>
         </div>
+      </div>
       </div>
     </>
   )

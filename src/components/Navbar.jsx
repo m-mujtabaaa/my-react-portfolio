@@ -29,8 +29,8 @@ const sections = document.querySelectorAll("[id]");
 
   return (
     <>
-      <div className="w-[100vw] fixed top-0 left-0 z-45 " data-aos="fade-down">
-        <div className='w-[90%] mx-auto h-[77px] bg-[#01060cff] z-6 flex border-b-[1px] border-[#272727ff] items-center justify-between'>
+      <div className="w-[100vw] bg-[#01060c9f] backdrop-blur-md border-b-[1px] border-[#272727ff] fixed top-0 left-0 z-45 " data-aos="fade-down">
+        <div className='w-[90%] mx-auto h-[77px] z-6 flex items-center justify-between'>
 
           <h2 className='py-5 px-5 text-[#868686ff] text-[24px] grow font-black'>
             &lt;/<span className='text-[#ffffffff]'>Mujtaba</span>&gt;

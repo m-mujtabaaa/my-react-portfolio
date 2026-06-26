@@ -94,7 +94,7 @@ const sections = document.querySelectorAll("[id]");
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-[#01060cff] w-full border-t border-[#272727ff]">            
+          <div className="md:hidden bg-[#01060cff] text-center w-full border-t border-[#272727ff]">            
           <ul className="flex flex-col p-6 gap-4 text-[#b8b8b8ff]">
              <li className="mx-5">
               <a

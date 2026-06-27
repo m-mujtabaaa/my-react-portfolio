@@ -31,7 +31,8 @@ function Front() {
   <ReactTyped
     strings={[
       "Front-End Web Developer",
-      "Front-End Web Developer",
+      "React Developer",
+      "UI Enthusiast",
     ]}
     typeSpeed={40}
     backSpeed={10}
